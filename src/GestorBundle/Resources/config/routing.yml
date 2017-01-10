@@ -1,0 +1,37 @@
+gestor_homepage:
+    path:     /
+    defaults: { _controller: GestorBundle:Default:index }
+
+all_Empresa:
+    path:     /Empresa/all
+    defaults: { _controller: GestorBundle:Empresa:all }
+
+new_Empresa:
+    path:     /Empresa/new
+    defaults: { _controller: GestorBundle:Empresa:crearEmpresa }
+
+all_Alumno:
+    path:     /Alumno/all
+    defaults: { _controller: GestorBundle:Alumno:all }
+
+empresa_get:
+    path:     /Empresa/GET
+    defaults: { _controller: GestorBundle:API:getEmpresas }
+    methods: [GET]
+
+all_Profesor:
+    path:     /Profesor/all
+    defaults: { _controller: GestorBundle:Profesor:all }
+
+new_Profesor:
+    path:     /Profesor/new
+    defaults: { _controller: GestorBundle:Profesor:crearProfesor }
+
+profesor_get:
+    path:     /Profesor/GET
+    defaults: { _controller: GestorBundle:APIProfesor:getProfesor }
+    methods: [GET]
+
+new_user:
+  path:     /User/new
+  defaults: { _controller: UsuariosBundle:Registration:register }
